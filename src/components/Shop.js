@@ -3,14 +3,17 @@ import ProductView from './ProductView'
 function Shop (){
 
 
-    const [products,cartList] = useOutletContext()
-    console.table(products)
+    const [products,cartList,addToCart] = useOutletContext()
 
     
     return (<div>
         here is the shop!
         <ul>
-        {products.map((product)=>{return <li><ProductView product = {product}/></li>})}
+        {products.map((product,index)=>{return <li key={index}><ProductView 
+                                                    product = {product} 
+                                                    addToCart={addToCart}
+                                                    />
+                                                    </li>})}
         </ul>
     </div>)
 }
