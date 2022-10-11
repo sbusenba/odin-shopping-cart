@@ -1,4 +1,4 @@
-import {Outlet} from 'react-router-dom'
+import {Outlet,Link} from 'react-router-dom'
 import {useState} from 'react'
 import appleImg from '../images/apple-svgrepo-com.svg'
 import orangeImg from '../images/orange-svgrepo-com.svg'
@@ -9,15 +9,15 @@ function Store (){
                        {name:"orange",price:2,image:orangeImg},
                        {name:"apple",price:2,image:appleImg},]
     const addToCart = ({name,price,quantity})=>{
-        console.log('adding item')
+        quantity = parseInt(quantity)
         setCartList([{name,price,quantity},...cartList])
     }
 
     const [products,setProducts] =useState(productList)
-    const [cartList,setCartList] = useState([])
+    const [cartList,setCartList] = useState([{name:'kiwi',quantity:3,price:1}])
     return (<div>
-        <div>Here is the storeFront</div>
-        <div>cart:{cartList.length}</div>
+        <div>Here is the <Link to="shop" >shop.</Link></div>
+        <div><Link to="cart" >CART:</Link>{cartList.length}</div>
         
         <Outlet context = {[products,cartList,addToCart]}/>
     </div>)
