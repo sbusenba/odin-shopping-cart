@@ -10,11 +10,13 @@ function Store (){
                        {name:"apple",price:2,image:appleImg},]
     const addToCart = ({name,price,quantity})=>{
         quantity = parseInt(quantity)
-        setCartList([{name,price,quantity},...cartList])
+        if (quantity>0){
+            setCartList([{name,price,quantity},...cartList])
+        }
     }
 
     const [products,setProducts] =useState(productList)
-    const [cartList,setCartList] = useState([{name:'kiwi',quantity:3,price:1}])
+    const [cartList,setCartList] = useState([])
     return (<div>
         <div>Here is the <Link to="shop" >shop.</Link></div>
         <div><Link to="cart" >CART:</Link>{cartList.length}</div>
