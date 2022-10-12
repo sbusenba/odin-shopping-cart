@@ -12,13 +12,24 @@ function ProductView (props){
     let qtyChange = (e)=>{
         setQuantity(e.target.value)
     }
+    let raiseQty = ()=>{
+        setQuantity(parseInt(quantity) + 1)
+    }
+    let lowerQty = ()=>{
+        if (quantity>0)
+        setQuantity(parseInt(quantity -1));
+    }
 
     return (<div>
-        <img src={props.product.image}></img>
-        <div>{props.product.name}</div>
+        <div className='productDesc'>
+            <img src={props.product.image} alt={props.product.name}></img>
+            <div>{props.product.name}</div>
+        </div>
         <div>${props.product.price}</div>
-        <label htmlFor='qtyInput'> Quantity:
-            <input type='text' onChange={qtyChange}/>
+        <label htmlFor='qtyInput'> Quantity: 
+          <button onClick={lowerQty}>-</button> 
+            <input type='text' onChange={qtyChange} value={quantity}/>
+            <button onClick={raiseQty}>+</button>
         </label>
         <button onClick={click}>Add to Cart</button>
     </div>)
