@@ -7,7 +7,7 @@ function Shop (){
 
     
     return (<div>
-        here is the shop!
+        Welcome to my shop!
         <ul>
         {products.map((product,index)=>{return <li key={index}><ProductView 
                                                     product = {product} 
