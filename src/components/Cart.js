@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function Cart (){
 
-    const [products,cartList,addToCart,updateCart] = useOutletContext()
+    const [,cartList,,updateCart] = useOutletContext()
     let total = 0;
     return (<div>
         
