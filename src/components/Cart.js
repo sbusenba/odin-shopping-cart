@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function Cart (){
 
-    const [products,cartList,addToCart] = useOutletContext()
+    const [products,cartList,addToCart,updateCart] = useOutletContext()
     let total = 0;
     return (<div>
         
@@ -14,7 +14,7 @@ function Cart (){
         {cartList.map((item,index)=>{
             total += item.price*item.quantity;
             return <li key={index}> 
-            <ProductCartView product={item}/>
+            <ProductCartView product={item} cart={cartList} updateCart={updateCart}/>
         </li>})}
         </ul>
         <div>{`Total: $${total}`}</div>

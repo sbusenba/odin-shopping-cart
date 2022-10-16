@@ -19,12 +19,12 @@ function Store (){
     }
     
     const updateCart=(updatedCart)=>{
-        setCartList(updatedCart)
+        setCartList([...updatedCart])
     }
     
     return (<div>
         <div><Link to="cart" >CART:</Link>{cartList.length}</div>
-        <Outlet context = {[products,cartList,addToCart]}/>
+        <Outlet context = {[products,cartList,addToCart,updateCart]}/>
     </div>)
 }
 export default Store;

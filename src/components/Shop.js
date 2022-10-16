@@ -3,7 +3,7 @@ import ProductView from './ProductView'
 function Shop (){
 
 
-    const [products,cartList,addToCart] = useOutletContext()
+    const [products,cartList,addToCart,updateCart] = useOutletContext()
 
     
     return (<div>

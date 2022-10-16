@@ -9,6 +9,16 @@ function ProductCartView (props){
         if (quantity>0)
         setQuantity(parseInt(quantity -1));
     }
+    let updateQuantity = ()=>{
+        let editCart = props.cart;
+        editCart.forEach((cartItem,index)=>{
+            if (cartItem.name === props.product.name) {
+                cartItem.quantity = quantity;
+            }
+        })
+
+        props.updateCart(editCart)
+    }
     
     return (<div>
         <div className='productDesc'>
@@ -20,7 +30,7 @@ function ProductCartView (props){
             <input type='text' onChange={()=>{}} value={quantity}/>
             <button onClick={raiseQty}>+</button>
         </label>
-        <button onClick={()=>{}}>Update Quantity</button>
+        <button onClick={updateQuantity}>Update Quantity</button>
     </div>)
 }
 export default ProductCartView;
