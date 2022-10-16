@@ -1,0 +1,18 @@
+.navDiv{
+    position:sticky;
+    top:0px;
+    background-color: aquamarine;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height:10vh;
+}
+
+.navDiv>ul{
+    display:flex;
+    flex-direction: row;
+}
+.navDiv>ul>li{
+     background-color: aliceblue;
+}

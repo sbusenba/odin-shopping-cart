@@ -4,6 +4,7 @@ import appleImg from '../images/apple-svgrepo-com.svg'
 import orangeImg from '../images/orange-svgrepo-com.svg'
 import bananaImg from '../images/bananas-svgrepo-com.svg'
 import pearImg from "../images/pear-fruit-svgrepo-com.svg"
+import '../styles/store.css'
 
 function Store (){
     let productList = [{name:"banana",price:0.50,image:bananaImg},
@@ -24,9 +25,22 @@ function Store (){
         setCartList([...updatedCart])
     }
     
-    return (<div>
-        <div><Link to="cart" >CART:</Link>{cartList.length}</div>
+    return (
+    <div>
+        <nav className='navDiv'>
+            
+            <div><h1>Pete's Produce</h1></div>
+            <ul>
+            <li><div><Link to="shop" >shop</Link></div></li>
+            <li><div><Link to="" >about</Link></div></li>
+            <li><div className='cartDiv'>
+            
+                <Link to="cart">cart:</Link>{cartList.length}
+            </div></li>
+            </ul>
+        </nav>
         <Outlet context = {[products,cartList,addToCart,updateCart]}/>
+
     </div>)
 }
 export default Store;
