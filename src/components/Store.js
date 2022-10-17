@@ -34,7 +34,13 @@ function Store (){
     }
     
     const updateCart=(updatedCart)=>{
-        setCartList([...updatedCart])
+        let newCartList= []
+        updatedCart.forEach((cartItem)=>{
+            if (cartItem.quantity>0){
+                newCartList.push(cartItem)
+            }})
+
+        setCartList([...newCartList])
     }
     const linkStyle = {
         margin: "0rem",
