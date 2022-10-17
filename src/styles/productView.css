@@ -22,3 +22,8 @@ li>div{
 input {
     width:50px;
 }
+.productCard {
+    background-color: rgb(77, 157, 226);
+    border: none;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgb(119, 173, 221);
+}

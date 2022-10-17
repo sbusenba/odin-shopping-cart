@@ -20,7 +20,7 @@ function ProductView (props){
         setQuantity(parseInt(quantity -1));
     }
 
-    return (<div>
+    return (<div className='productCard'>
         <div className='productDesc'>
             <img src={props.product.image} alt={props.product.name}></img>
             <div>{props.product.name}</div>
