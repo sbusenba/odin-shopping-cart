@@ -26,18 +26,22 @@ function Store (){
     const updateCart=(updatedCart)=>{
         setCartList([...updatedCart])
     }
-    
+    const linkStyle = {
+        margin: "0rem",
+        textDecoration: "none",
+        color: "rgb(0,0,0)",
+      };
     return (
     <div>
         <nav className='navDiv'>
             
             <div><h1>Pete's Produce</h1></div>
             <ul>
-            <li><div><Link to="" >about</Link></div></li>
-            <li><div><Link to="shop" >shop</Link></div></li>
-            <li><div className='cartDiv'>
+            <li><div><Link to="" style={linkStyle}>about</Link></div></li>
+            <li><div><Link to="shop" style={linkStyle}>shop</Link></div></li>
+            <li><div className='cartDiv' >
             
-                <Link to="cart">cart:</Link>{cartList.length}
+                <Link to="cart" style={linkStyle}>cart:</Link>{cartList.length}
             </div></li>
             </ul>
         </nav>
