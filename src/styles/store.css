@@ -1,12 +1,13 @@
 .navDiv{
     position:sticky;
     top:0px;
-    background-color: aquamarine;
+    background-color: rgb(72, 167, 135);
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height:10vh;
+    z-index: 1;
 }
 
 .navDiv>ul{
@@ -15,4 +16,7 @@
 }
 .navDiv>ul>li{
      background-color: aliceblue;
+}
+.navDiv h1{ 
+    margin:2rem;
 }
