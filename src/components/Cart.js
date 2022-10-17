@@ -13,8 +13,8 @@ function Cart (){
             <ul>
         {cartList.map((item,index)=>{
             total += item.price*item.quantity;
-            return <li key={index}> 
-            <ProductCartView product={item} cart={cartList} updateCart={updateCart}/>
+            return <li key={index+item.quantity+item.price}> 
+            <ProductCartView product={item} cart={cartList} updateCart={updateCart} key={index+item.quantity+item.price}/>
         </li>})}
         </ul>
         <div>{`Total: $${total}`}</div>
