@@ -17,7 +17,6 @@ function ProductCartView (props){
                 cartItem.quantity = quantity;
             }
         })
-
         props.updateCart(editCart)
     }
     
