@@ -19,8 +19,18 @@ function Store (){
     const addToCart = ({name,price,quantity})=>{
         quantity = parseInt(quantity)
         if (quantity>0){
+        let newCartList = cartList;
+        let duplicateItem = false;
+        newCartList.forEach((cartItem)=>{
+            if (cartItem.name === name){
+                cartItem.quantity +=quantity;
+                duplicateItem= true;
+                setCartList([...newCartList])
+            }
+        }) 
+        if (!duplicateItem){
             setCartList([{name,price,quantity},...cartList])
-        }
+        }}
     }
     
     const updateCart=(updatedCart)=>{
