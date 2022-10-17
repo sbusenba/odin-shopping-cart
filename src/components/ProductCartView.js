@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import '../styles/productCartView.css'
 function ProductCartView (props){
     let [quantity,setQuantity] = useState(props.product.quantity)
     
@@ -21,7 +22,7 @@ function ProductCartView (props){
     }
     
     return (<div>
-        <div className='productDesc'>
+        <div className='productCartDesc'>
             <div>{props.product.name}</div>
         </div>
         <div>${props.product.price}</div>
