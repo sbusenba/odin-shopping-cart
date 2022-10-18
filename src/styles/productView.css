@@ -9,7 +9,7 @@ li {
     justify-content: center;
 }
 li>div{
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     margin: 1rem;
     display:flex;
     flex-direction: row;
@@ -24,11 +24,18 @@ li>div{
 
 }
 input {
-    width:50px;
+    width:30px;
+    border-radius: 10px;
+    text-align: center;
 }
 .productCard {
     background-color: rgb(77, 157, 226);
     border: none;
     box-shadow: 0.25rem 0.25rem 0.25rem rgb(119, 173, 221);
     flex: 0 0 550px;
+}
+button {border-radius:10px;}
+.price{
+    font-size: xx-large;
+
 }

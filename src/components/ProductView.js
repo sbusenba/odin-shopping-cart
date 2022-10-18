@@ -25,7 +25,7 @@ function ProductView (props){
             <img src={props.product.image} alt={props.product.name}></img>
             <div>{props.product.name}</div>
         </div>
-        <div>${props.product.price}</div>
+        <div className='price'>${props.product.price}</div>
         <label htmlFor='qtyInput'> Quantity: 
           <button onClick={lowerQty}>-</button> 
             <input type='text' onChange={qtyChange} value={quantity}/>
