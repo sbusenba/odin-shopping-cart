@@ -8,7 +8,7 @@ function Cart (){
     let total = 0;
     return (<div>
         
-        Your Cart:
+        <div>Your Cart:</div>
         <Link to="/shop" >Back to Store</Link>
             <ul>
         {cartList.map((item,index)=>{
@@ -17,7 +17,7 @@ function Cart (){
             <ProductCartView product={item} cart={cartList} updateCart={updateCart} key={index+item.quantity+item.price}/>
         </li>})}
         </ul>
-        <div>{`Total: $${total}`}</div>
+        <div><button>{`Check out, total: $${total}`}</button></div>
     </div>)
 }
 export default Cart;
