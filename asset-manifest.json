@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/odin-shopping-cart/static/css/main.e05976a0.css",
+    "main.js": "/odin-shopping-cart/static/js/main.244b4dd9.js",
+    "static/media/La_Boqueria.jpeg": "/odin-shopping-cart/static/media/La_Boqueria.53265a14a456e4dc1a20.jpeg",
+    "static/media/pineapple-svgrepo-com.svg": "/odin-shopping-cart/static/media/pineapple-svgrepo-com.384e8f2979e022a8838c0a447308d38c.svg",
+    "static/media/logo.svg": "/odin-shopping-cart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/orange-svgrepo-com.svg": "/odin-shopping-cart/static/media/orange-svgrepo-com.85f4c0102b150b649165e33743b1eaaf.svg",
+    "static/media/bananas-svgrepo-com.svg": "/odin-shopping-cart/static/media/bananas-svgrepo-com.dba1a6ef565cc5aaa9f303afa7ddc9d7.svg",
+    "static/media/apple-svgrepo-com.svg": "/odin-shopping-cart/static/media/apple-svgrepo-com.803aa3d982d58770f021d7251e9630b9.svg",
+    "static/media/pear-fruit-svgrepo-com.svg": "/odin-shopping-cart/static/media/pear-fruit-svgrepo-com.2e71debc865b2c4b23e36f7f67bd68eb.svg",
+    "index.html": "/odin-shopping-cart/index.html",
+    "main.e05976a0.css.map": "/odin-shopping-cart/static/css/main.e05976a0.css.map",
+    "main.244b4dd9.js.map": "/odin-shopping-cart/static/js/main.244b4dd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e05976a0.css",
+    "static/js/main.244b4dd9.js"
+  ]
+}
