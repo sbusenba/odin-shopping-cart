@@ -20,7 +20,7 @@ function ProductCartView (props){
         props.updateCart(editCart)
     }
     
-    return (<div>
+    return (<div className='productCartDiv'>
         <div className='productCartDesc'>
             <div>{props.product.name}</div>
         </div>
