@@ -4,6 +4,9 @@ img {
 }
 li {
     list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 li>div{
     border: 2px solid black;
@@ -18,6 +21,7 @@ li>div{
     display:flex;
     flex-direction: column;
     align-items: center;
+
 }
 input {
     width:50px;
@@ -26,4 +30,5 @@ input {
     background-color: rgb(77, 157, 226);
     border: none;
     box-shadow: 0.25rem 0.25rem 0.25rem rgb(119, 173, 221);
+    flex: 0 0 550px;
 }
