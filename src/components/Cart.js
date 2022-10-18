@@ -1,6 +1,7 @@
 import  {useOutletContext} from 'react-router-dom'
 import ProductCartView from './ProductCartView';
 import {Link} from 'react-router-dom'
+import '../styles/cart.css'
 
 function Cart (){
 
@@ -17,7 +18,7 @@ function Cart (){
             <ProductCartView product={item} cart={cartList} updateCart={updateCart} key={index+item.quantity+item.price}/>
         </li>})}
         </ul>
-        <div><button>{`Check out, total: $${total}`}</button></div>
+        <div className='checkout'><button>{`Check out, total: $${total}`}</button></div>
     </div>)
 }
 export default Cart;
