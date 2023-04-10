@@ -9,6 +9,6 @@
     flex: 0 0 500px;
     
 }
-button {
-    margin:1rem;
+.productCartDiv>button {
+    margin :1rem;
 }
